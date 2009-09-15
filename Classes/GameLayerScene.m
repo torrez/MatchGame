@@ -4,10 +4,13 @@
 //
 
 // Import the interfaces
-#import "HelloWorldScene.h"
+#import "GameLayerScene.h"
+#import "HUDLayer.h"
 
-// HelloWorld implementation
-@implementation HelloWorld
+// GameLayer implementation
+@implementation GameLayer
+
+@synthesize hud;
 
 +(id) scene
 {
@@ -15,10 +18,15 @@
 	Scene *scene = [Scene node];
 	
 	// 'layer' is an autorelease object.
-	HelloWorld *layer = [HelloWorld node];
+	GameLayer *layer = [GameLayer node];
+	HUDLayer *hudlayer = [HUDLayer node];
+	
+	[layer setHud:hudlayer];
+	[hudlayer setGame:layer];
 	
 	// add layer as a child to scene
-	[scene addChild: layer];
+	[scene addChild:hudlayer z:1];
+	[scene addChild:layer z:0];
 	
 	// return the scene
 	return scene;

@@ -8,7 +8,7 @@
 
 #import "MatchGameAppDelegate.h"
 #import "cocos2d.h"
-#import "HelloWorldScene.h"
+#import "GameLayerScene.h"
 
 @implementation MatchGameAppDelegate
 
@@ -40,9 +40,8 @@
 	// create an openGL view inside a window
 	[[Director sharedDirector] attachInView:window];	
 	[window makeKeyAndVisible];		
-		
-		
-	[[Director sharedDirector] runWithScene: [HelloWorld scene]];
+	
+	[[Director sharedDirector] runWithScene: [GameLayer scene]];
 }
 
 
