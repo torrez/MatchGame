@@ -25,4 +25,5 @@
 
 + (id) newFromValue:(int)n;
 - (void)flip;
+- (double) getWidth;
 @end

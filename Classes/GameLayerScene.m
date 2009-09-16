@@ -74,26 +74,31 @@
 
 - (void) shuffleDeck
 {
-	//nop
+    for (int x = 0; x < DECK_SIZE; x++) {
+        int elements = DECK_SIZE - x;
+        int n = (random() % elements) + x;
+        [deck exchangeObjectAtIndex:x withObjectAtIndex:n];
+    }
 }
 
 - (void) dealDeck
 {
-	int left = 10;
-	int top = 10;
+	int left = 50;
+	int top = 400;
 	
-	for(int x = 0; x<12;x++)
+	for (int x = 0,y= 1;x < DECK_SIZE; x++, y++)
 	{
 		CGPoint origin = ccp((float)left, (float)top);
 		Card *card = [deck objectAtIndex:x];
 		[card.front_sprite setPosition:origin];
 		[self addChild: card.front_sprite];
-		if ((x % 3) == 0) 
+		if (y==4)
 		{
-			top += 20;
-			left = 10;
+			top -= 100;
+			left = 50;
+			y = 0;
 		} else {
-			left += 20;
+			left += 70;
 		}
 	}
 }

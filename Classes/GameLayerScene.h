@@ -2,6 +2,8 @@
 // When you import this file, you import all the cocos2d classes
 #import "cocos2d.h"
 
+#define DECK_SIZE 12
+
 @class HUDLayer;
 
 // GameLayer Layer

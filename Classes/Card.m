@@ -7,7 +7,7 @@
 //
 
 #import "Card.h"
-
+#import "cocos2d.h"
 
 @implementation Card
 
