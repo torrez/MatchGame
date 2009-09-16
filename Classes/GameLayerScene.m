@@ -36,6 +36,8 @@
 	// always call "super" init
 	// Apple recommends to re-assign "self" with the "super" return value
 	if( (self=[super init] )) {
+
+		isTouchEnabled = YES;
 		
 		// create and initialize a Label
 		Label* label = [Label labelWithString:@"Hello World" fontName:@"Marker Felt" fontSize:64];
@@ -100,6 +102,23 @@
 		} else {
 			left += 70;
 		}
+	}
+}
+
+-(BOOL)ccTouchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
+	UITouch *touch = [touches anyObject];
+	CGPoint location = [touch locationInView: [touch view]];
+	CGPoint cLoc = [[Director sharedDirector] convertCoordinate: location];
+	
+	NSLog(@"GAME LAYER received a click.");
+	NSLog(@"x=%f,y=%f", location.x, location.y);
+	NSLog(@"x=%f,y=%f", cLoc.x,cLoc.y);
+	
+	if(0)
+	{
+		return kEventHandled;
+	} else {
+		return kEventIgnored;
 	}
 }
 

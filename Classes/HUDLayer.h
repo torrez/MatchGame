@@ -7,7 +7,8 @@
 // HUDLayer Layer
 @interface HUDLayer : Layer
 {
-	GameLayer *game;
+	GameLayer	*game;
+	CGRect		shuffle_rect;
 }
 @property (nonatomic, retain) GameLayer *game;
 

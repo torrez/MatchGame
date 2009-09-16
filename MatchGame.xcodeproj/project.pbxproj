@@ -178,6 +178,7 @@
 		6C6BC77F10605F7C005CD035 /* card-5.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C6BC77910605F7C005CD035 /* card-5.png */; };
 		6C6BC78010605F7C005CD035 /* card-6.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C6BC77A10605F7C005CD035 /* card-6.png */; };
 		6C6BC78110605F7C005CD035 /* card-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C6BC77B10605F7C005CD035 /* card-back.png */; };
+		6C6BC94510616337005CD035 /* shuffle-cards.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C6BC94410616337005CD035 /* shuffle-cards.png */; };
 		CA3EACB90FEE7024004BBF8E /* fps_images.png in Resources */ = {isa = PBXBuildFile; fileRef = CA3EACB80FEE7024004BBF8E /* fps_images.png */; };
 		DC6640030F83B3EA000B3E49 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC6640020F83B3EA000B3E49 /* AudioToolbox.framework */; };
 		DC6640050F83B3EA000B3E49 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC6640040F83B3EA000B3E49 /* OpenAL.framework */; };
@@ -369,6 +370,7 @@
 		6C6BC77910605F7C005CD035 /* card-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "card-5.png"; path = "Resources/card-5.png"; sourceTree = "<group>"; };
 		6C6BC77A10605F7C005CD035 /* card-6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "card-6.png"; path = "Resources/card-6.png"; sourceTree = "<group>"; };
 		6C6BC77B10605F7C005CD035 /* card-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "card-back.png"; path = "Resources/card-back.png"; sourceTree = "<group>"; };
+		6C6BC94410616337005CD035 /* shuffle-cards.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "shuffle-cards.png"; path = "Resources/shuffle-cards.png"; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA3EACB80FEE7024004BBF8E /* fps_images.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fps_images.png; sourceTree = "<group>"; };
 		DC6640020F83B3EA000B3E49 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -451,6 +453,7 @@
 			children = (
 				6C6BC77610605F7C005CD035 /* card-2.png */,
 				6C6BC77710605F7C005CD035 /* card-3.png */,
+				6C6BC94410616337005CD035 /* shuffle-cards.png */,
 				6C6BC77810605F7C005CD035 /* card-4.png */,
 				6C6BC77910605F7C005CD035 /* card-5.png */,
 				6C6BC77A10605F7C005CD035 /* card-6.png */,
@@ -863,6 +866,7 @@
 				6C6BC77F10605F7C005CD035 /* card-5.png in Resources */,
 				6C6BC78010605F7C005CD035 /* card-6.png in Resources */,
 				6C6BC78110605F7C005CD035 /* card-back.png in Resources */,
+				6C6BC94510616337005CD035 /* shuffle-cards.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
