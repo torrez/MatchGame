@@ -1,16 +1,14 @@
-//
-// cocos2d Hello World example
-// http://www.cocos2d-iphone.org
-//
-
 // Import the interfaces
 #import "GameLayerScene.h"
 #import "HUDLayer.h"
+#import "Card.h"
 
 // GameLayer implementation
 @implementation GameLayer
 
 @synthesize hud;
+@synthesize testCard;
+@synthesize deck;
 
 +(id) scene
 {
@@ -50,18 +48,58 @@
 		
 		// add the label as a child to this Layer
 		[self addChild: label];
+		
+		[self initializeDeck];
+		[self shuffleDeck];
+		[self dealDeck];
 	}
 	return self;
 }
 
-// on "dealloc" you need to release all your retained objects
 - (void) dealloc
 {
-	// in case you have something to dealloc, do it in this method
-	// in this particular example nothing needs to be released.
-	// cocos2d will automatically release all the children (Label)
 	
-	// don't forget to call "super dealloc"
+	//finally
 	[super dealloc];
 }
+
+- (void) initializeDeck
+{
+	deck = [NSMutableArray arrayWithCapacity:20];
+	/*testCard = [Sprite spriteWithFile:@"card-1.png"];
+	[testCard setPosition:ccp(100, 100)];
+	[self addChild:testCard];
+	 */
+	for (int x = 1; x < 7; x++) {
+		[deck addObject:[Card newFromValue:x]];
+		[deck addObject:[Card newFromValue:x]];
+	}	
+}
+
+- (void) shuffleDeck
+{
+	//nop
+}
+
+- (void) dealDeck
+{
+	int left = 10;
+	int top = 10;
+	
+	for(int x = 0; x<12;x++)
+	{
+		CGPoint origin = ccp((float)left, (float)top);
+		Card *card = [deck objectAtIndex:x];
+		[card.front_sprite setPosition:origin];
+		[self addChild: card.front_sprite];
+		if ((x % 3) == 0) 
+		{
+			top += 20;
+			left = 10;
+		} else {
+			left += 20;
+		}
+	}
+}
+
 @end

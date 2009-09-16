@@ -170,6 +170,14 @@
 		506EE1A91030508200A389B3 /* libcocos2d libraries.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 506EE05E10304ED200A389B3 /* libcocos2d libraries.a */; };
 		6C6BC5FE105F5A17005CD035 /* HUDLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C6BC5FD105F5A17005CD035 /* HUDLayer.m */; };
 		6C6BC607105F5DC0005CD035 /* GameLayerScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C6BC606105F5DC0005CD035 /* GameLayerScene.m */; };
+		6C6BC68110600DB1005CD035 /* card-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C6BC68010600DB1005CD035 /* card-1.png */; };
+		6C6BC6AD10601DC7005CD035 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C6BC6AC10601DC7005CD035 /* Card.m */; };
+		6C6BC77C10605F7C005CD035 /* card-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C6BC77610605F7C005CD035 /* card-2.png */; };
+		6C6BC77D10605F7C005CD035 /* card-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C6BC77710605F7C005CD035 /* card-3.png */; };
+		6C6BC77E10605F7C005CD035 /* card-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C6BC77810605F7C005CD035 /* card-4.png */; };
+		6C6BC77F10605F7C005CD035 /* card-5.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C6BC77910605F7C005CD035 /* card-5.png */; };
+		6C6BC78010605F7C005CD035 /* card-6.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C6BC77A10605F7C005CD035 /* card-6.png */; };
+		6C6BC78110605F7C005CD035 /* card-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C6BC77B10605F7C005CD035 /* card-back.png */; };
 		CA3EACB90FEE7024004BBF8E /* fps_images.png in Resources */ = {isa = PBXBuildFile; fileRef = CA3EACB80FEE7024004BBF8E /* fps_images.png */; };
 		DC6640030F83B3EA000B3E49 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC6640020F83B3EA000B3E49 /* AudioToolbox.framework */; };
 		DC6640050F83B3EA000B3E49 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC6640040F83B3EA000B3E49 /* OpenAL.framework */; };
@@ -352,6 +360,15 @@
 		6C6BC5FD105F5A17005CD035 /* HUDLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HUDLayer.m; sourceTree = "<group>"; };
 		6C6BC605105F5DC0005CD035 /* GameLayerScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameLayerScene.h; sourceTree = "<group>"; };
 		6C6BC606105F5DC0005CD035 /* GameLayerScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameLayerScene.m; sourceTree = "<group>"; };
+		6C6BC68010600DB1005CD035 /* card-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "card-1.png"; path = "Resources/card-1.png"; sourceTree = "<group>"; };
+		6C6BC6AB10601DC7005CD035 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
+		6C6BC6AC10601DC7005CD035 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
+		6C6BC77610605F7C005CD035 /* card-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "card-2.png"; path = "Resources/card-2.png"; sourceTree = "<group>"; };
+		6C6BC77710605F7C005CD035 /* card-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "card-3.png"; path = "Resources/card-3.png"; sourceTree = "<group>"; };
+		6C6BC77810605F7C005CD035 /* card-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "card-4.png"; path = "Resources/card-4.png"; sourceTree = "<group>"; };
+		6C6BC77910605F7C005CD035 /* card-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "card-5.png"; path = "Resources/card-5.png"; sourceTree = "<group>"; };
+		6C6BC77A10605F7C005CD035 /* card-6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "card-6.png"; path = "Resources/card-6.png"; sourceTree = "<group>"; };
+		6C6BC77B10605F7C005CD035 /* card-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "card-back.png"; path = "Resources/card-back.png"; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA3EACB80FEE7024004BBF8E /* fps_images.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fps_images.png; sourceTree = "<group>"; };
 		DC6640020F83B3EA000B3E49 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -432,10 +449,17 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				6C6BC77610605F7C005CD035 /* card-2.png */,
+				6C6BC77710605F7C005CD035 /* card-3.png */,
+				6C6BC77810605F7C005CD035 /* card-4.png */,
+				6C6BC77910605F7C005CD035 /* card-5.png */,
+				6C6BC77A10605F7C005CD035 /* card-6.png */,
+				6C6BC77B10605F7C005CD035 /* card-back.png */,
 				505573C11045D1EA00A31725 /* Default.png */,
 				505573BF1045D1BE00A31725 /* Icon.png */,
 				CA3EACB80FEE7024004BBF8E /* fps_images.png */,
 				8D1107310486CEB800E47090 /* Info.plist */,
+				6C6BC68010600DB1005CD035 /* card-1.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -465,6 +489,8 @@
 				6C6BC5FD105F5A17005CD035 /* HUDLayer.m */,
 				1F3B9A2C0EF2145700286867 /* MatchGameAppDelegate.h */,
 				1F3B9A2B0EF2145700286867 /* MatchGameAppDelegate.m */,
+				6C6BC6AB10601DC7005CD035 /* Card.h */,
+				6C6BC6AC10601DC7005CD035 /* Card.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -830,6 +856,13 @@
 				CA3EACB90FEE7024004BBF8E /* fps_images.png in Resources */,
 				505573C01045D1BE00A31725 /* Icon.png in Resources */,
 				505573C21045D1EA00A31725 /* Default.png in Resources */,
+				6C6BC68110600DB1005CD035 /* card-1.png in Resources */,
+				6C6BC77C10605F7C005CD035 /* card-2.png in Resources */,
+				6C6BC77D10605F7C005CD035 /* card-3.png in Resources */,
+				6C6BC77E10605F7C005CD035 /* card-4.png in Resources */,
+				6C6BC77F10605F7C005CD035 /* card-5.png in Resources */,
+				6C6BC78010605F7C005CD035 /* card-6.png in Resources */,
+				6C6BC78110605F7C005CD035 /* card-back.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -844,6 +877,7 @@
 				1F3B9A2D0EF2145700286867 /* MatchGameAppDelegate.m in Sources */,
 				6C6BC5FE105F5A17005CD035 /* HUDLayer.m in Sources */,
 				6C6BC607105F5DC0005CD035 /* GameLayerScene.m in Sources */,
+				6C6BC6AD10601DC7005CD035 /* Card.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

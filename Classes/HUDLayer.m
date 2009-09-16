@@ -26,7 +26,7 @@
 		
 		// position the label on the center of the screen
 		label.position =  ccp( size.width /2 + 20 , size.height/2 - 20);
-		[label setRGB:80 :90 :10];
+
 		// add the label as a child to this Layer
 		[self addChild: label];
 	}

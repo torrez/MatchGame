@@ -27,8 +27,8 @@
 	// WARNING: FastDirector doesn't interact well with UIKit controls
 	//	[Director useFastDirector];
 	
-	// before creating any layer, set the landscape mode
-	[[Director sharedDirector] setDeviceOrientation:CCDeviceOrientationLandscapeLeft];
+	// before creating any layer, set the portrait mode
+	[[Director sharedDirector] setDeviceOrientation:CCDeviceOrientationPortrait];
 	[[Director sharedDirector] setAnimationInterval:1.0/60];
 	[[Director sharedDirector] setDisplayFPS:YES];
 	
