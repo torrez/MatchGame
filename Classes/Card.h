@@ -14,16 +14,18 @@
 @interface Card : NSObject {
 	BOOL	is_flipped;
 	int		value;
+	CGRect  _table_location;
 	Sprite	*back_sprite;
 	Sprite	*front_sprite;
 }
 
 @property BOOL		is_flipped;
 @property int		value;
+@property CGRect	_table_location;
 @property (nonatomic, retain) Sprite *back_sprite;
 @property (nonatomic, retain) Sprite *front_sprite;
 
 + (id) newFromValue:(int)n;
-- (void)flip;
-- (double) getWidth;
+- (void) flip;
+- (Sprite *) getCurrentView;
 @end

@@ -7,7 +7,7 @@
 //
 
 #import "HUDLayer.h"
-
+#import "GameLayerScene.h"
 
 @implementation HUDLayer
 @synthesize game;
@@ -17,7 +17,6 @@
 	// always call "super" init
 	// Apple recommends to re-assign "self" with the "super" return value
 	if( (self=[super init] )) {
-
 		isTouchEnabled = YES;
 		CGSize window_size = [[Director sharedDirector] winSize];
 		
@@ -26,9 +25,6 @@
 		sprite.position = ccp(window_size.width /2, 60);
 		shuffle_rect = CGRectMake(sprite.position.x - (sprite.position.x /2), sprite.position.y - (sprite.position.y / 2), 200, 50);
 		[self addChild: sprite];
-		
-		
-		
 	}
 	return self;
 }
@@ -40,7 +36,9 @@
 	
 	if (CGRectContainsPoint(shuffle_rect, cLoc))
 	{
-		NSLog(@"************Shuffle cards.***************");
+        
+        [game shuffleDeck];
+        [game dealDeck];
 		return kEventHandled;
 	} else {
 		return kEventIgnored;

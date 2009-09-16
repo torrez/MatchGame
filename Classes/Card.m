@@ -15,7 +15,7 @@
 @synthesize value;
 @synthesize front_sprite;
 @synthesize back_sprite;
-
+@synthesize _table_location;
 
 + (id)newFromValue:(int)n
 {
@@ -24,6 +24,7 @@
 		new_card.front_sprite = [Sprite spriteWithFile:[NSString stringWithFormat:@"card-%i.png", n]];
 		new_card.back_sprite  =	[Sprite spriteWithFile:@"card-back.png"];
 		new_card.value = n;
+		new_card._table_location = CGRectMake(900,900, 0,0); //hackety!
 		return new_card;
 	} else {
 		return NULL;
@@ -37,9 +38,25 @@
 	return self;
 }
 
+- (void) release
+{
+    NSLog(@"About to be released at %i", value);
+    [super release];
+}
+
 - (void) flip
 {
 	is_flipped = is_flipped ? NO : YES;
+}
+
+- (Sprite *)getCurrentView
+{
+	if (is_flipped) {
+		return front_sprite;
+	} else {
+		return back_sprite;
+	}
+
 }
 
 @end

@@ -3,6 +3,8 @@
 #import "cocos2d.h"
 
 #define DECK_SIZE 12
+#define CARD_WIDTH 50
+#define CARD_HEIGHT 90
 
 @class HUDLayer;
 
@@ -14,13 +16,15 @@
 	NSMutableArray	*deck;
 	int				available_cards[11];
 }
-@property (nonatomic, retain) HUDLayer	*hud;
-@property (nonatomic, retain) Sprite	*testCard;
-@property (nonatomic, retain) NSArray	*deck;
+@property (nonatomic, retain) HUDLayer          *hud;
+@property (nonatomic, retain) Sprite            *testCard;
+@property (nonatomic, retain) NSMutableArray	*deck;
 
 // returns a Scene that contains the GameLayer as the only child
-+(id) scene;
--(void)initializeDeck;
--(void)shuffleDeck;
--(void)dealDeck;
++ (id) scene;
+- (void)initializeDeck;
+- (void)shuffleDeck;
+- (void)dealDeck;
+- (void)deckInfo;
+
 @end

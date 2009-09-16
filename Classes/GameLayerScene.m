@@ -36,21 +36,8 @@
 	// always call "super" init
 	// Apple recommends to re-assign "self" with the "super" return value
 	if( (self=[super init] )) {
-
+        
 		isTouchEnabled = YES;
-		
-		// create and initialize a Label
-		Label* label = [Label labelWithString:@"Hello World" fontName:@"Marker Felt" fontSize:64];
-
-		// ask director the the window size
-		CGSize size = [[Director sharedDirector] winSize];
-	
-		// position the label on the center of the screen
-		label.position =  ccp( size.width /2 , size.height/2 );
-		
-		// add the label as a child to this Layer
-		[self addChild: label];
-		
 		[self initializeDeck];
 		[self shuffleDeck];
 		[self dealDeck];
@@ -67,42 +54,61 @@
 
 - (void) initializeDeck
 {
-	deck = [NSMutableArray arrayWithCapacity:20];
+    NSLog(@"Initializing Deck");
+	[self setDeck:[NSMutableArray arrayWithCapacity:DECK_SIZE]];
 	for (int x = 1; x < 7; x++) {
 		[deck addObject:[Card newFromValue:x]];
 		[deck addObject:[Card newFromValue:x]];
-	}	
+	}
+    
+    NSLog(@"Deck has a size of %i.", [deck count]);
 }
 
 - (void) shuffleDeck
 {
+    NSLog(@"In shuffle deck.");
     for (int x = 0; x < DECK_SIZE; x++) {
         int elements = DECK_SIZE - x;
         int n = (random() % elements) + x;
         [deck exchangeObjectAtIndex:x withObjectAtIndex:n];
+        NSLog(@"Moving item %i to %i.", x, n);
     }
+    NSLog(@"Deck has size of %i.", [deck count]);
 }
 
 - (void) dealDeck
 {
-	int left = 50;
-	int top = 400;
+    NSLog(@"Dealing Deck");
+    int left = 50;
+    int top = 400;
 	
+    [self removeAllChildrenWithCleanup:YES];
+
 	for (int x = 0,y= 1;x < DECK_SIZE; x++, y++)
 	{
 		CGPoint origin = ccp((float)left, (float)top);
+        
+        NSLog(@"About to grab a card at %i.", x);
 		Card *card = [deck objectAtIndex:x];
-		[card.front_sprite setPosition:origin];
-		[self addChild: card.front_sprite];
+        NSLog(@"Grabbed card %i", x);
+        [card setIs_flipped:NO];
+		[[card getCurrentView] setPosition:origin];
+		[self addChild: [card getCurrentView]];
+		[card set_table_location:CGRectMake(origin.x, origin.y, CARD_WIDTH, CARD_HEIGHT)];
 		if (y==4)
 		{
-			top -= 100;
-			left = 50;
-			y = 0;
+            top -= 100;
+            left = 50;
+            y = 0;
 		} else {
 			left += 70;
 		}
 	}
+}
+
+- (void) deckInfo
+{
+    NSLog(@"Deck info");//: %@", deck);
 }
 
 -(BOOL)ccTouchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
@@ -121,5 +127,4 @@
 		return kEventIgnored;
 	}
 }
-
 @end
