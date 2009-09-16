@@ -66,10 +66,6 @@
 - (void) initializeDeck
 {
 	deck = [NSMutableArray arrayWithCapacity:20];
-	/*testCard = [Sprite spriteWithFile:@"card-1.png"];
-	[testCard setPosition:ccp(100, 100)];
-	[self addChild:testCard];
-	 */
 	for (int x = 1; x < 7; x++) {
 		[deck addObject:[Card newFromValue:x]];
 		[deck addObject:[Card newFromValue:x]];
