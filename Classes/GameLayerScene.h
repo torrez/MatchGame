@@ -12,8 +12,8 @@
 // GameLayer Layer
 @interface GameLayer : Layer
 {
-	HUDLayer		*hud;
-	NSMutableArray	*deck;
+    HUDLayer		*hud;
+    NSMutableArray	*deck;
     BOOL            in_match;
     Card            *first_card;
     Card            *second_card;

@@ -265,14 +265,15 @@
 							<array>
 								<string>29B97314FDCFA39411CA2CEA</string>
 								<string>2D500B1D0D5A766B00DBA0E3</string>
+								<string>29B97315FDCFA39411CA2CEA</string>
 								<string>29B97317FDCFA39411CA2CEA</string>
 								<string>1C37FABC05509CD000000102</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>8</integer>
-									<integer>2</integer>
+									<integer>13</integer>
+									<integer>11</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -296,7 +297,7 @@
 							<real>186</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>441 292 1173 719 0 0 1680 1028 </string>
+						<string>201 277 1173 719 0 0 1680 1028 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -314,7 +315,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>MatchGameAppDelegate.m</string>
+								<string>main.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -322,20 +323,23 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>MatchGameAppDelegate.m</string>
+										<string>main.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>6C6BCC361062F0F8005CD035</string>
+										<string>6C6BCC5D1062FC24005CD035</string>
 										<key>history</key>
 										<array>
-											<string>6C6BCBF41062DFB0005CD035</string>
-											<string>6C6BCBF51062DFB0005CD035</string>
-											<string>6C6BCBF61062DFB0005CD035</string>
-											<string>6C6BCBF81062DFB0005CD035</string>
-											<string>6C6BCC031062E0E3005CD035</string>
-											<string>6C6BCC301062EAD7005CD035</string>
-											<string>6C6BCC311062EAD7005CD035</string>
+											<string>6C6BCC4C1062F8D7005CD035</string>
+											<string>6C6BCC501062FAEF005CD035</string>
+											<string>6C6BCC511062FAEF005CD035</string>
+											<string>6C6BCC521062FAEF005CD035</string>
+											<string>6C6BCC531062FAEF005CD035</string>
+											<string>6C6BCC541062FAEF005CD035</string>
+											<string>6C6BCC551062FAEF005CD035</string>
+											<string>6C6BCC561062FAEF005CD035</string>
+											<string>6C6BCC5B1062FC24005CD035</string>
+											<string>6C6BCC5C1062FC24005CD035</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -349,7 +353,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {965, 673}}</string>
 								<key>RubberWindowFrame</key>
-								<string>441 292 1173 719 0 0 1680 1028 </string>
+								<string>201 277 1173 719 0 0 1680 1028 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -369,7 +373,7 @@
 								<key>Frame</key>
 								<string>{{0, 678}, {965, 0}}</string>
 								<key>RubberWindowFrame</key>
-								<string>441 292 1173 719 0 0 1680 1028 </string>
+								<string>201 277 1173 719 0 0 1680 1028 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -538,9 +542,10 @@
 		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>6C6BC5EB105F4CA6005CD035</string>
+		<string>/Users/torrez/Code/Cocoa/MatchGame/MatchGame.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>441 292 1173 719 0 0 1680 1028 </string>
+	<string>201 277 1173 719 0 0 1680 1028 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
