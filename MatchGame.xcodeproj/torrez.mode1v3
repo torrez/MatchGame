@@ -271,7 +271,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>4</integer>
+									<integer>8</integer>
 									<integer>2</integer>
 									<integer>0</integer>
 								</array>
@@ -314,7 +314,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>GameLayerScene.m</string>
+								<string>MatchGameAppDelegate.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -322,11 +322,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>GameLayerScene.m</string>
+										<string>MatchGameAppDelegate.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>6C6BCC0A1062E24A005CD035</string>
+										<string>6C6BCC361062F0F8005CD035</string>
 										<key>history</key>
 										<array>
 											<string>6C6BCBF41062DFB0005CD035</string>
@@ -334,7 +334,8 @@
 											<string>6C6BCBF61062DFB0005CD035</string>
 											<string>6C6BCBF81062DFB0005CD035</string>
 											<string>6C6BCC031062E0E3005CD035</string>
-											<string>6C6BCC041062E0E3005CD035</string>
+											<string>6C6BCC301062EAD7005CD035</string>
+											<string>6C6BCC311062EAD7005CD035</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -346,14 +347,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {965, 543}}</string>
+								<string>{{0, 0}, {965, 673}}</string>
 								<key>RubberWindowFrame</key>
 								<string>441 292 1173 719 0 0 1680 1028 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>543pt</string>
+							<string>673pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -366,14 +367,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 548}, {965, 130}}</string>
+								<string>{{0, 678}, {965, 0}}</string>
 								<key>RubberWindowFrame</key>
 								<string>441 292 1173 719 0 0 1680 1028 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>130pt</string>
+							<string>0pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
@@ -532,10 +533,11 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>6C6BCC261062E970005CD035</string>
+		<string>6C6BCC271062E970005CD035</string>
+		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>6C6BC5EB105F4CA6005CD035</string>
-		<string>1C78EAAD065D492600B07095</string>
-		<string>/Users/torrez/Code/Cocoa/MatchGame/MatchGame.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
 	<string>441 292 1173 719 0 0 1680 1028 </string>
@@ -630,7 +632,7 @@
 			<key>WindowToolGUID</key>
 			<string>6C6BC5EB105F4CA6005CD035</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>FirstTimeWindowDisplayed</key>
@@ -878,7 +880,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {1155, 677}}</string>
 								<key>RubberWindowFrame</key>
-								<string>67 310 1155 718 0 0 1680 1028 </string>
+								<string>140 191 1155 718 0 0 1680 1028 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXDebugCLIModule</string>
@@ -907,11 +909,11 @@
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.consoleV3</string>
 			<key>WindowString</key>
-			<string>67 310 1155 718 0 0 1680 1028 </string>
+			<string>140 191 1155 718 0 0 1680 1028 </string>
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>Identifier</key>

@@ -30,7 +30,7 @@
 	// before creating any layer, set the portrait mode
 	[[Director sharedDirector] setDeviceOrientation:CCDeviceOrientationPortrait];
 	[[Director sharedDirector] setAnimationInterval:1.0/60];
-	[[Director sharedDirector] setDisplayFPS:YES];
+	//[[Director sharedDirector] setDisplayFPS:YES];
 	
 	// Default texture format for PNG/BMP/TIFF/JPEG/GIF images
 	// It can be RGBA8888, RGBA4444, RGB5_A1, RGB565

@@ -68,6 +68,16 @@
 
 - (void) shuffleDeck
 {
+    in_match = NO;
+    first_card = NULL;
+    second_card = NULL;
+    
+    for (int x = 0; x < DECK_SIZE; x++) {
+        Card *testCard = [deck objectAtIndex:x];
+        testCard.is_matched = NO;
+        testCard.is_flipped = NO;
+    }
+    
     for (int x = 0; x < DECK_SIZE; x++) {
         int elements = DECK_SIZE - x;
         int n = (random() % elements) + x;
@@ -117,7 +127,7 @@
             
             if (card == first_card) {
                 NSLog(@"Card is the same as the first card. Resetting card.");
-                [card flip];
+                [self flipCard:card];
                 first_card = NULL;
                 return kEventHandled;
             } else if ([card is_matched]) {
