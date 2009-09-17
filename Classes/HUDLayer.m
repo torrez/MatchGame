@@ -9,6 +9,8 @@
 #import "HUDLayer.h"
 #import "GameLayerScene.h"
 
+
+
 @implementation HUDLayer
 @synthesize game;
 
@@ -33,7 +35,12 @@
 	UITouch *touch = [touches anyObject];
 	CGPoint location = [touch locationInView: [touch view]];
 	CGPoint cLoc = [[Director sharedDirector] convertCoordinate: location];
-	
+
+    //test if we are currently waiting for a card test to happen
+	if ([game inMatch]) {
+        return kEventHandled;
+    }
+    
 	if (CGRectContainsPoint(shuffle_rect, cLoc))
 	{
         [game shuffleDeck];

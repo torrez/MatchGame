@@ -7,10 +7,9 @@
 @implementation GameLayer
 
 @synthesize hud;
-@synthesize testCard;
 @synthesize deck;
-@synthesize firstCard;
-@synthesize secondCard;
+@synthesize first_card;
+@synthesize second_card;
 
 +(id) scene
 {
@@ -44,8 +43,8 @@
 		[self shuffleDeck];
 		[self dealDeck];
         
-        firstCard   = NULL;
-        secondCard  = NULL;
+        first_card   = NULL;
+        second_card  = NULL;
         in_match    = NO;
 	}
 	return self;
@@ -114,40 +113,29 @@
         }
         
         if (CGRectContainsPoint(card._table_location, cLoc))
-        {
-            if (firstCard)
-            {
-                if (card != firstCard) {
-                    [self flipCard:card];
-                }
-                
+        {       
+            
+            if (card == first_card) {
+                NSLog(@"Card is the same as the first card. Resetting card.");
+                [card flip];
+                first_card = NULL;
+                return kEventHandled;
+            } else if ([card is_matched]) {
+                NSLog(@"That card has already been matched.");                
+                return kEventHandled;
             }
-            /*
-            if (in_match) {
-                if (firstCard == card) {
-                    //changed mind?
-                    NSLog(@"clicked same card");
-                    firstCard = NULL;
-                    in_match = NO;
-                    [self flipCard:card];
-                } else if (firstCard.value == card.value) {
-                    NSLog(@"Match!");
-                    [self flipCard:card];
-                    card.is_matched = YES;
-                    in_match = NO;
-                    [self flipCard:firstCard];
-                    firstCard = NULL;
-                } else {
-                    NSLog(@"No match.");
-                    in_match = NO;
-                    [self flipCard:card];
-                    [self flipCard:firstCard];
-                    firstCard = NULL;
-                }
-            } else {
-                firstCard = card;
+            NSLog(@"On to real matching…");
+            
+            if (first_card) {
+                [self flipCard:card];
                 in_match = YES;
-            }*/
+                second_card = card;
+                [self schedule:@selector(check_selection:) interval:0.5];
+            } else {
+                [self flipCard:card];
+                first_card = card;
+            }
+
             return kEventHandled;
         }
     }
@@ -165,8 +153,32 @@
 
 -(void) check_selection: (ccTime) dt
 {
-    NSLog(@"I'd check selection here");
+    NSLog(@"Checking selection.");
+    NSLog(@"Card 1 Value: %i, Card 2 Value: %i.", first_card, second_card);
+    if (first_card.value == second_card.value) {
+        first_card.is_matched = YES;
+        second_card.is_matched = YES;
+        first_card = NULL;
+        second_card = NULL;
+        in_match = NO;
+    } else {
+        [self flipCard:first_card];
+        [self flipCard:second_card];
+        in_match = NO;
+        first_card = NULL;
+        second_card = NULL;
+    }
+
     [self unschedule:@selector(check_selection:)];
+}
+
+- (BOOL) inMatch
+{
+    if (in_match) {
+        return YES; 
+    } else {
+        return NO;
+    }
 }
 
 @end
