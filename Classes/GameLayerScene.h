@@ -17,11 +17,13 @@
 	NSMutableArray	*deck;
     BOOL            in_match;
     Card            *firstCard;
+    Card            *secondCard;
 }
 @property (nonatomic, retain) HUDLayer          *hud;
 @property (nonatomic, retain) Sprite            *testCard;
 @property (nonatomic, retain) NSMutableArray	*deck;
 @property (nonatomic, retain) Card              *firstCard;
+@property (nonatomic, retain) Card              *secondCard;
 
 
 // returns a Scene that contains the GameLayer as the only child

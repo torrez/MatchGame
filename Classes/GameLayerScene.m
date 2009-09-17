@@ -9,6 +9,8 @@
 @synthesize hud;
 @synthesize testCard;
 @synthesize deck;
+@synthesize firstCard;
+@synthesize secondCard;
 
 +(id) scene
 {
@@ -113,8 +115,12 @@
         
         if (CGRectContainsPoint(card._table_location, cLoc))
         {
-            if (card != firstCard) {
-                [self flipCard:card];
+            if (firstCard)
+            {
+                if (card != firstCard) {
+                    [self flipCard:card];
+                }
+                
             }
             /*
             if (in_match) {
@@ -156,4 +162,11 @@
     [self addChild:[card getCurrentView]];
     [[card getCurrentView] setPosition: origin];
 }
+
+-(void) check_selection: (ccTime) dt
+{
+    NSLog(@"I'd check selection here");
+    [self unschedule:@selector(check_selection:)];
+}
+
 @end
