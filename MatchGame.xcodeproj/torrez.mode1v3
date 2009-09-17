@@ -271,7 +271,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>10</integer>
+									<integer>4</integer>
 									<integer>2</integer>
 									<integer>0</integer>
 								</array>
@@ -296,7 +296,7 @@
 							<real>186</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>361 117 1173 837 0 0 1680 1028 </string>
+						<string>359 144 1173 837 0 0 1680 1028 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -314,7 +314,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>Card.m</string>
+								<string>GameLayerScene.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -322,26 +322,19 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>Card.m</string>
+										<string>GameLayerScene.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>6C6BCB091061AA39005CD035</string>
+										<string>6C6BCBB21061C461005CD035</string>
 										<key>history</key>
 										<array>
-											<string>6C6BC78C10606134005CD035</string>
-											<string>6C6BC795106062A8005CD035</string>
-											<string>6C6BC89510609E9D005CD035</string>
-											<string>6C6BC97410616876005CD035</string>
-											<string>6C6BC9F810618FC0005CD035</string>
-											<string>6C6BCA2710619712005CD035</string>
-											<string>6C6BCA4A106199A0005CD035</string>
-											<string>6C6BCA6710619B35005CD035</string>
-											<string>6C6BCAB91061A06C005CD035</string>
-											<string>6C6BCAE41061A4B4005CD035</string>
-											<string>6C6BCAFE1061A94C005CD035</string>
-											<string>6C6BCB061061A973005CD035</string>
-											<string>6C6BCB071061A973005CD035</string>
+											<string>6C6BCB881061BBDC005CD035</string>
+											<string>6C6BCB9F1061BE08005CD035</string>
+											<string>6C6BCBA01061BE08005CD035</string>
+											<string>6C6BCBAC1061C18D005CD035</string>
+											<string>6C6BCBB01061C461005CD035</string>
+											<string>6C6BCBB11061C461005CD035</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -355,7 +348,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {965, 661}}</string>
 								<key>RubberWindowFrame</key>
-								<string>361 117 1173 837 0 0 1680 1028 </string>
+								<string>359 144 1173 837 0 0 1680 1028 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -375,7 +368,7 @@
 								<key>Frame</key>
 								<string>{{0, 666}, {965, 130}}</string>
 								<key>RubberWindowFrame</key>
-								<string>361 117 1173 837 0 0 1680 1028 </string>
+								<string>359 144 1173 837 0 0 1680 1028 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -545,7 +538,7 @@
 		<string>/Users/torrez/Code/Cocoa/MatchGame/MatchGame.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>361 117 1173 837 0 0 1680 1028 </string>
+	<string>359 144 1173 837 0 0 1680 1028 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
@@ -561,12 +554,14 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string></string>
+								<string>GameLayerScene.h</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -635,7 +630,7 @@
 			<key>WindowToolGUID</key>
 			<string>6C6BC5EB105F4CA6005CD035</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>FirstTimeWindowDisplayed</key>

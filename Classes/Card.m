@@ -12,6 +12,7 @@
 @implementation Card
 
 @synthesize is_flipped;
+@synthesize is_matched;
 @synthesize value;
 @synthesize front_sprite;
 @synthesize back_sprite;
@@ -34,7 +35,7 @@
 - (id)init
 {
 	[super init];
-	is_flipped = YES;
+	is_flipped = NO;
 	return self;
 }
 

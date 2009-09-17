@@ -41,6 +41,10 @@
 		[self initializeDeck];
 		[self shuffleDeck];
 		[self dealDeck];
+        
+        firstCard   = NULL;
+        secondCard  = NULL;
+        in_match    = NO;
 	}
 	return self;
 }
@@ -54,47 +58,37 @@
 
 - (void) initializeDeck
 {
-    NSLog(@"Initializing Deck");
 	[self setDeck:[NSMutableArray arrayWithCapacity:DECK_SIZE]];
 	for (int x = 1; x < 7; x++) {
 		[deck addObject:[Card newFromValue:x]];
 		[deck addObject:[Card newFromValue:x]];
 	}
-    
-    NSLog(@"Deck has a size of %i.", [deck count]);
 }
 
 - (void) shuffleDeck
 {
-    NSLog(@"In shuffle deck.");
     for (int x = 0; x < DECK_SIZE; x++) {
         int elements = DECK_SIZE - x;
         int n = (random() % elements) + x;
         [deck exchangeObjectAtIndex:x withObjectAtIndex:n];
-        NSLog(@"Moving item %i to %i.", x, n);
     }
-    NSLog(@"Deck has size of %i.", [deck count]);
 }
 
 - (void) dealDeck
 {
-    NSLog(@"Dealing Deck");
     int left = 50;
     int top = 400;
 	
     [self removeAllChildrenWithCleanup:YES];
-
+    
 	for (int x = 0,y= 1;x < DECK_SIZE; x++, y++)
 	{
 		CGPoint origin = ccp((float)left, (float)top);
         
-        NSLog(@"About to grab a card at %i.", x);
 		Card *card = [deck objectAtIndex:x];
-        NSLog(@"Grabbed card %i", x);
-        [card setIs_flipped:NO];
 		[[card getCurrentView] setPosition:origin];
 		[self addChild: [card getCurrentView]];
-		[card set_table_location:CGRectMake(origin.x, origin.y, CARD_WIDTH, CARD_HEIGHT)];
+		[card set_table_location:CGRectMake(origin.x - CARD_WIDTH / 2 , origin.y - CARD_HEIGHT / 2, CARD_WIDTH, CARD_HEIGHT)];
 		if (y==4)
 		{
             top -= 100;
@@ -106,25 +100,60 @@
 	}
 }
 
-- (void) deckInfo
-{
-    NSLog(@"Deck info");//: %@", deck);
-}
-
 -(BOOL)ccTouchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
 	UITouch *touch = [touches anyObject];
 	CGPoint location = [touch locationInView: [touch view]];
 	CGPoint cLoc = [[Director sharedDirector] convertCoordinate: location];
-	
-	NSLog(@"GAME LAYER received a click.");
-	NSLog(@"x=%f,y=%f", location.x, location.y);
-	NSLog(@"x=%f,y=%f", cLoc.x,cLoc.y);
-	
-	if(0)
-	{
-		return kEventHandled;
-	} else {
-		return kEventIgnored;
-	}
+    
+    for (int x = 0; x < DECK_SIZE; x++) {
+        Card *card = [deck objectAtIndex:x];
+        if (card.is_matched){
+            continue;
+        }
+        
+        if (CGRectContainsPoint(card._table_location, cLoc))
+        {
+            if (card != firstCard) {
+                [self flipCard:card];
+            }
+            /*
+            if (in_match) {
+                if (firstCard == card) {
+                    //changed mind?
+                    NSLog(@"clicked same card");
+                    firstCard = NULL;
+                    in_match = NO;
+                    [self flipCard:card];
+                } else if (firstCard.value == card.value) {
+                    NSLog(@"Match!");
+                    [self flipCard:card];
+                    card.is_matched = YES;
+                    in_match = NO;
+                    [self flipCard:firstCard];
+                    firstCard = NULL;
+                } else {
+                    NSLog(@"No match.");
+                    in_match = NO;
+                    [self flipCard:card];
+                    [self flipCard:firstCard];
+                    firstCard = NULL;
+                }
+            } else {
+                firstCard = card;
+                in_match = YES;
+            }*/
+            return kEventHandled;
+        }
+    }
+	return kEventIgnored;
+}
+
+- (void)flipCard:(Card *)card
+{
+    CGPoint origin = [[card getCurrentView] position];
+    [self removeChild:[card getCurrentView] cleanup:YES];
+    [card flip];
+    [self addChild:[card getCurrentView]];
+    [[card getCurrentView] setPosition: origin];
 }
 @end

@@ -36,7 +36,6 @@
 	
 	if (CGRectContainsPoint(shuffle_rect, cLoc))
 	{
-        
         [game shuffleDeck];
         [game dealDeck];
 		return kEventHandled;
