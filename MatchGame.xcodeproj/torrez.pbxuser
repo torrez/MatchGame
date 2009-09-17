@@ -27,6 +27,7 @@
 		activeTarget = 1D6058900D05DD3D006BFB54 /* MatchGame */;
 		addToTargets = (
 			1D6058900D05DD3D006BFB54 /* MatchGame */,
+			506EE05D10304ED200A389B3 /* cocos2d libraries */,
 		);
 		breakpoints = (
 			6C6BC75410605EBF005CD035 /* Card.m:17 */,
@@ -320,6 +321,26 @@
 			6C6BCC5B1062FC24005CD035 /* PBXTextBookmark */ = 6C6BCC5B1062FC24005CD035 /* PBXTextBookmark */;
 			6C6BCC5C1062FC24005CD035 /* PBXTextBookmark */ = 6C6BCC5C1062FC24005CD035 /* PBXTextBookmark */;
 			6C6BCC5D1062FC24005CD035 /* PBXTextBookmark */ = 6C6BCC5D1062FC24005CD035 /* PBXTextBookmark */;
+			6C6BCD46106301AA005CD035 /* PBXTextBookmark */ = 6C6BCD46106301AA005CD035 /* PBXTextBookmark */;
+			6C6BCD47106301AA005CD035 /* XCBuildMessageTextBookmark */ = 6C6BCD47106301AA005CD035 /* XCBuildMessageTextBookmark */;
+			6C6BCD48106301AA005CD035 /* PBXTextBookmark */ = 6C6BCD48106301AA005CD035 /* PBXTextBookmark */;
+			6C6BCD49106301B6005CD035 /* PBXTextBookmark */ = 6C6BCD49106301B6005CD035 /* PBXTextBookmark */;
+			6C6BCD4A106301B6005CD035 /* PBXTextBookmark */ = 6C6BCD4A106301B6005CD035 /* PBXTextBookmark */;
+			6C6BCD4B106301B6005CD035 /* PBXBookmark */ = 6C6BCD4B106301B6005CD035 /* PBXBookmark */;
+			6C6BCD4C106301B6005CD035 /* XCBuildMessageTextBookmark */ = 6C6BCD4C106301B6005CD035 /* XCBuildMessageTextBookmark */;
+			6C6BCD4D106301B6005CD035 /* PBXTextBookmark */ = 6C6BCD4D106301B6005CD035 /* PBXTextBookmark */;
+			6C6BCD54106301CA005CD035 /* PBXTextBookmark */ = 6C6BCD54106301CA005CD035 /* PBXTextBookmark */;
+			6C6BCD5E106302B4005CD035 /* PBXTextBookmark */ = 6C6BCD5E106302B4005CD035 /* PBXTextBookmark */;
+			6C6BCD61106302FF005CD035 /* PBXTextBookmark */ = 6C6BCD61106302FF005CD035 /* PBXTextBookmark */;
+			6C6BCD661063033D005CD035 /* PBXTextBookmark */ = 6C6BCD661063033D005CD035 /* PBXTextBookmark */;
+			6C6BCD7110630361005CD035 /* XCBuildMessageTextBookmark */ = 6C6BCD7110630361005CD035 /* XCBuildMessageTextBookmark */;
+			6C6BCD7210630361005CD035 /* PBXTextBookmark */ = 6C6BCD7210630361005CD035 /* PBXTextBookmark */;
+			6C6BCFCA10630416005CD035 /* PBXTextBookmark */ = 6C6BCFCA10630416005CD035 /* PBXTextBookmark */;
+			6C6BCFCB10630416005CD035 /* PBXTextBookmark */ = 6C6BCFCB10630416005CD035 /* PBXTextBookmark */;
+			6C6BCFCC10630416005CD035 /* XCBuildMessageTextBookmark */ = 6C6BCFCC10630416005CD035 /* XCBuildMessageTextBookmark */;
+			6C6BCFCD10630416005CD035 /* PBXTextBookmark */ = 6C6BCFCD10630416005CD035 /* PBXTextBookmark */;
+			6C6BD14310630483005CD035 /* PBXBookmark */ = 6C6BD14310630483005CD035 /* PBXBookmark */;
+			6C6BD14410630483005CD035 /* PBXTextBookmark */ = 6C6BD14410630483005CD035 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 6C6BC5ED105F4CA6005CD035 /* Source Control */;
 		userBuildSettings = {
@@ -328,7 +349,7 @@
 	29B97316FDCFA39411CA2CEA /* main.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {904, 616}}";
-			sepNavSelRange = "{217, 0}";
+			sepNavSelRange = "{234, 0}";
 			sepNavVisRange = "{0, 234}";
 		};
 	};
@@ -336,6 +357,12 @@
 		activeExec = 0;
 	};
 	506EE07D10304F7500A389B3 /* CocosNode.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = CocosNode.m;
+		path = /Users/torrez/Code/Cocoa/MatchGame/cocos2d/CocosNode.m;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {904, 9477}}";
 			sepNavSelRange = "{3158, 0}";
@@ -343,6 +370,12 @@
 		};
 	};
 	506EE0AE10304F7500A389B3 /* Sprite.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = Sprite.h;
+		path = /Users/torrez/Code/Cocoa/MatchGame/cocos2d/Sprite.h;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {761, 1326}}";
 			sepNavSelRange = "{1182, 45}";
@@ -350,6 +383,12 @@
 		};
 	};
 	506EE0AF10304F7500A389B3 /* Sprite.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = Sprite.m;
+		path = /Users/torrez/Code/Cocoa/MatchGame/cocos2d/Sprite.m;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {879, 3341}}";
 			sepNavSelRange = "{565, 23}";
@@ -413,7 +452,7 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {936, 616}}";
 			sepNavSelRange = "{1059, 0}";
-			sepNavVisRange = "{0, 1068}";
+			sepNavVisRange = "{730, 332}";
 		};
 	};
 	6C6BC605105F5DC0005CD035 /* GameLayerScene.h */ = {
@@ -2902,6 +2941,229 @@
 		rLoc = 217;
 		rType = 0;
 		vrLen = 234;
+		vrLoc = 0;
+	};
+	6C6BCC811063019C005CD035 /* EaseAction.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = EaseAction.m;
+		path = /Users/torrez/Code/Cocoa/MatchGame/Library/cocos2d/EaseAction.m;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {762, 3066}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 400}";
+		};
+	};
+	6C6BCD46106301AA005CD035 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6C6BC5FD105F5A17005CD035 /* HUDLayer.m */;
+		name = "HUDLayer.m: 26";
+		rLen = 0;
+		rLoc = 815;
+		rType = 0;
+		vrLen = 624;
+		vrLoc = 308;
+	};
+	6C6BCD47106301AA005CD035 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Operation on 't' may be undefined";
+		fRef = 6C6BCC811063019C005CD035 /* EaseAction.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 185;
+		rType = 1;
+	};
+	6C6BCD48106301AA005CD035 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6C6BCC811063019C005CD035 /* EaseAction.m */;
+		name = "EaseAction.m: 186";
+		rLen = 0;
+		rLoc = 3187;
+		rType = 0;
+		vrLen = 321;
+		vrLoc = 3056;
+	};
+	6C6BCD49106301B6005CD035 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 29B97316FDCFA39411CA2CEA /* main.m */;
+		name = "main.m: 9";
+		rLen = 0;
+		rLoc = 234;
+		rType = 0;
+		vrLen = 234;
+		vrLoc = 0;
+	};
+	6C6BCD4A106301B6005CD035 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6C6BC5FC105F5A17005CD035 /* HUDLayer.h */;
+		name = "HUDLayer.h: 11";
+		rLen = 0;
+		rLoc = 141;
+		rType = 0;
+		vrLen = 190;
+		vrLoc = 0;
+	};
+	6C6BCD4B106301B6005CD035 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 6C6BC77610605F7C005CD035 /* card-2.png */;
+	};
+	6C6BCD4C106301B6005CD035 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Operation on 't' may be undefined";
+		fRef = 6C6BCC811063019C005CD035 /* EaseAction.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 185;
+		rType = 1;
+	};
+	6C6BCD4D106301B6005CD035 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6C6BCC811063019C005CD035 /* EaseAction.m */;
+		name = "EaseAction.m: 186";
+		rLen = 0;
+		rLoc = 3187;
+		rType = 0;
+		vrLen = 728;
+		vrLoc = 2867;
+	};
+	6C6BCD54106301CA005CD035 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6C6BCC811063019C005CD035 /* EaseAction.m */;
+		name = "EaseAction.m: 186";
+		rLen = 0;
+		rLoc = 3187;
+		rType = 0;
+		vrLen = 728;
+		vrLoc = 2867;
+	};
+	6C6BCD5E106302B4005CD035 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6C6BCC811063019C005CD035 /* EaseAction.m */;
+		name = "EaseAction.m: 186";
+		rLen = 0;
+		rLoc = 3187;
+		rType = 0;
+		vrLen = 728;
+		vrLoc = 2867;
+	};
+	6C6BCD61106302FF005CD035 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6C6BCC811063019C005CD035 /* EaseAction.m */;
+		name = "EaseAction.m: 194";
+		rLen = 0;
+		rLoc = 3300;
+		rType = 0;
+		vrLen = 728;
+		vrLoc = 2867;
+	};
+	6C6BCD661063033D005CD035 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6C6BCC811063019C005CD035 /* EaseAction.m */;
+		name = "EaseAction.m: 194";
+		rLen = 0;
+		rLoc = 3300;
+		rType = 0;
+		vrLen = 728;
+		vrLoc = 2867;
+	};
+	6C6BCD7110630361005CD035 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Compile /Users/torrez/Code/Cocoa/MatchGame/Library/cocos2d/EaseAction.m";
+		fRef = 6C6BCC811063019C005CD035 /* EaseAction.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 0;
+		rLoc = 0;
+		rType = 1;
+	};
+	6C6BCD7210630361005CD035 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6C6BCC811063019C005CD035 /* EaseAction.m */;
+		name = "EaseAction.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 941;
+		vrLoc = 0;
+	};
+	6C6BCED9106303F3005CD035 /* ScoreServerPost.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = ScoreServerPost.m;
+		path = /Users/torrez/Code/Cocoa/MatchGame/cocoslive/ScoreServerPost.m;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {768, 4396}}";
+			sepNavSelRange = "{7561, 0}";
+			sepNavVisRange = "{7337, 612}";
+		};
+	};
+	6C6BCEDB106303F3005CD035 /* ScoreServerRequest.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = ScoreServerRequest.m;
+		path = /Users/torrez/Code/Cocoa/MatchGame/cocoslive/ScoreServerRequest.m;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {887, 3472}}";
+			sepNavSelRange = "{4758, 0}";
+			sepNavVisRange = "{4498, 640}";
+		};
+	};
+	6C6BCFCA10630416005CD035 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6C6BC5FD105F5A17005CD035 /* HUDLayer.m */;
+		name = "HUDLayer.m: 39";
+		rLen = 0;
+		rLoc = 1059;
+		rType = 0;
+		vrLen = 332;
+		vrLoc = 730;
+	};
+	6C6BCFCB10630416005CD035 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6C6BCED9106303F3005CD035 /* ScoreServerPost.m */;
+		name = "ScoreServerPost.m: 261";
+		rLen = 0;
+		rLoc = 7561;
+		rType = 0;
+		vrLen = 580;
+		vrLoc = 7337;
+	};
+	6C6BCFCC10630416005CD035 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "'stringWithCString:length:' is deprecated (declared at /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSString.h:363)";
+		fRef = 6C6BCEDB106303F3005CD035 /* ScoreServerRequest.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 170;
+		rType = 1;
+	};
+	6C6BCFCD10630416005CD035 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6C6BCEDB106303F3005CD035 /* ScoreServerRequest.m */;
+		name = "ScoreServerRequest.m: 171";
+		rLen = 0;
+		rLoc = 4758;
+		rType = 0;
+		vrLen = 640;
+		vrLoc = 4498;
+	};
+	6C6BD14310630483005CD035 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 6C6BC77610605F7C005CD035 /* card-2.png */;
+	};
+	6C6BD14410630483005CD035 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6C6BC605105F5DC0005CD035 /* GameLayerScene.h */;
+		name = "GameLayerScene.h: 27";
+		rLen = 0;
+		rLoc = 615;
+		rType = 0;
+		vrLen = 806;
 		vrLoc = 0;
 	};
 }
