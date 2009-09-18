@@ -4,18 +4,18 @@
 
 @class Sprite;
 @interface Card : NSObject {
-    BOOL	is_flipped;
+    BOOL    is_flipped;
     BOOL    is_matched;
-    int		value;
+    int     value;
     CGRect  _table_location;
-    Sprite	*back_sprite;
-    Sprite	*front_sprite;
+    Sprite  *back_sprite;
+    Sprite  *front_sprite;
 }
 
-@property BOOL		is_flipped;
+@property BOOL      is_flipped;
 @property BOOL      is_matched;
-@property int		value;
-@property CGRect	_table_location;
+@property int       value;
+@property CGRect    _table_location;
 @property (nonatomic, retain) Sprite *back_sprite;
 @property (nonatomic, retain) Sprite *front_sprite;
 

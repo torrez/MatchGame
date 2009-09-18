@@ -40,6 +40,7 @@
         first_card   = NULL;
         second_card  = NULL;
         in_match     = NO;
+        score        = 0;
     }
     return self;
 }
@@ -63,6 +64,7 @@
     in_match    = NO;
     first_card  = NULL;
     second_card = NULL;
+    [self resetScore];
     
     // Cleaning up cards.
     for (int x = 0; x < DECK_SIZE; x++) {
@@ -83,7 +85,7 @@
 {
     [self removeAllChildrenWithCleanup:YES];
     
-    CGPoint origin = ccp((float)50, (float)400);
+    CGPoint origin = ccp((float)55, (float)370);
 	
     for (int x = 0,y= 1; x < DECK_SIZE; x++, y++)
 	{
@@ -95,7 +97,7 @@
         if (y==4)
 		{
             origin.y -= 100;
-            origin.x = 50;
+            origin.x = 55;
             y = 0;
 		} else {
 			origin.x += 70;
@@ -106,6 +108,18 @@
 - (BOOL) inMatch
 {
     return in_match;
+}
+
+- (void) incrementScore
+{
+    score+=1;
+    [hud setScore:score];
+}
+
+- (void) resetScore
+{
+    score = 0;
+    [hud setScore:score];
 }
 
 -(BOOL)ccTouchesEnded:(NSSet *)touches withEvent:(UIEvent *)event 
@@ -129,6 +143,7 @@
             {
                 [self flipCard:card];
                 first_card = NULL;
+                [self incrementScore];
                 return kEventHandled;
             } else if ([card is_matched]) 
             {
@@ -141,6 +156,7 @@
                 in_match = YES;
                 second_card = card;
                 [self schedule:@selector(check_selection:) interval:0.5];
+                [self incrementScore];
             } else {
                 [self flipCard:card];
                 first_card = card;
