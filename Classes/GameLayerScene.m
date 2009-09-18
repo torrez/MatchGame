@@ -84,14 +84,19 @@
 - (void) dealDeck
 {
     [self removeAllChildrenWithCleanup:YES];
+
+    CGSize window_size = [[Director sharedDirector] winSize];
     
+    CGPoint offscreen = ccp((float)window_size.width/2, (float)0);
     CGPoint origin = ccp((float)55, (float)370);
 	
     for (int x = 0,y= 1; x < DECK_SIZE; x++, y++)
 	{
         Card *card = [deck objectAtIndex:x];
-		[[card getCurrentView] setPosition:origin];
+        [[card getCurrentView] setPosition:offscreen];
 		[self addChild: [card getCurrentView]];
+        [[card getCurrentView] runAction:[MoveTo actionWithDuration:.5 position:origin]];
+        [[card getCurrentView] runAction:[RotateBy actionWithDuration:.5 angle:360]];
 		[card set_table_location:CGRectMake(origin.x - CARD_WIDTH / 2 , origin.y - CARD_HEIGHT / 2, CARD_WIDTH, CARD_HEIGHT)];
 		
         if (y==4)
