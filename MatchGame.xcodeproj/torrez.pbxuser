@@ -341,6 +341,7 @@
 			6C6BCFCD10630416005CD035 /* PBXTextBookmark */ = 6C6BCFCD10630416005CD035 /* PBXTextBookmark */;
 			6C6BD14310630483005CD035 /* PBXBookmark */ = 6C6BD14310630483005CD035 /* PBXBookmark */;
 			6C6BD14410630483005CD035 /* PBXTextBookmark */ = 6C6BD14410630483005CD035 /* PBXTextBookmark */;
+			6C6BD14510630594005CD035 /* PBXTextBookmark */ = 6C6BD14510630594005CD035 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 6C6BC5ED105F4CA6005CD035 /* Source Control */;
 		userBuildSettings = {
@@ -458,7 +459,7 @@
 	6C6BC605105F5DC0005CD035 /* GameLayerScene.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {904, 616}}";
-			sepNavSelRange = "{615, 0}";
+			sepNavSelRange = "{184, 0}";
 			sepNavVisRange = "{0, 806}";
 		};
 	};
@@ -3162,6 +3163,16 @@
 		name = "GameLayerScene.h: 27";
 		rLen = 0;
 		rLoc = 615;
+		rType = 0;
+		vrLen = 806;
+		vrLoc = 0;
+	};
+	6C6BD14510630594005CD035 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6C6BC605105F5DC0005CD035 /* GameLayerScene.h */;
+		name = "GameLayerScene.h: 11";
+		rLen = 0;
+		rLoc = 184;
 		rType = 0;
 		vrLen = 806;
 		vrLoc = 0;
