@@ -1,2 +1,8 @@
 build/
 MatchGame_Prefix.pch
+.DS_Store
+*.swp
+*~.nib
+*.pbxuser
+*.perspective
+*.perspectivev3
