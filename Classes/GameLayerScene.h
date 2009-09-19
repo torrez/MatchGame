@@ -32,5 +32,5 @@
 - (void)dealDeck;
 - (void)flipCard:(Card *)card;
 - (BOOL)inMatch;
-- (int) getScore;
+- (void)resetScore;
 @end

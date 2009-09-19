@@ -270,7 +270,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>4</integer>
+									<integer>3</integer>
 									<integer>2</integer>
 									<integer>0</integer>
 								</array>
@@ -313,7 +313,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>GameLayerScene.m</string>
+								<string>GameLayerScene.h</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -321,11 +321,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>GameLayerScene.m</string>
+										<string>GameLayerScene.h</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>6C58F5F51064474A0043B4FC</string>
+										<string>6C58F6161064556A0043B4FC</string>
 										<key>history</key>
 										<array>
 											<string>6C6BCC541062FAEF005CD035</string>
@@ -334,10 +334,10 @@
 											<string>6C6BCD49106301B6005CD035</string>
 											<string>6C6BD14310630483005CD035</string>
 											<string>6C6BD15410630E48005CD035</string>
-											<string>6C6BD19110635AC6005CD035</string>
 											<string>6C6BD1B5106360DB005CD035</string>
 											<string>6C6BD1D610643E2F005CD035</string>
-											<string>6C6BD1DC10643FCB005CD035</string>
+											<string>6C58F6141064556A0043B4FC</string>
+											<string>6C58F6151064556A0043B4FC</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -535,6 +535,10 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>6C58F6171064556A0043B4FC</string>
+		<string>6C58F6181064556A0043B4FC</string>
+		<string>1C78EAAD065D492600B07095</string>
+		<string>1CD10A99069EF8BA00B06720</string>
 		<string>6C6BC5EB105F4CA6005CD035</string>
 		<string>/Users/torrez/Code/Cocoa/MatchGame/MatchGame.xcodeproj</string>
 	</array>
@@ -560,7 +564,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string></string>
+								<string>GameLayerScene.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -569,7 +573,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {823, 276}}</string>
 								<key>RubberWindowFrame</key>
-								<string>248 139 823 558 0 0 1680 1028 </string>
+								<string>292 147 823 558 0 0 1680 1028 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -577,6 +581,8 @@
 							<string>276pt</string>
 						</dict>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -593,7 +599,7 @@
 								<key>Frame</key>
 								<string>{{0, 281}, {823, 236}}</string>
 								<key>RubberWindowFrame</key>
-								<string>248 139 823 558 0 0 1680 1028 </string>
+								<string>292 147 823 558 0 0 1680 1028 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXBuildResultsModule</string>
@@ -625,11 +631,11 @@
 			<key>WindowContentMinSize</key>
 			<string>486 300</string>
 			<key>WindowString</key>
-			<string>248 139 823 558 0 0 1680 1028 </string>
+			<string>292 147 823 558 0 0 1680 1028 </string>
 			<key>WindowToolGUID</key>
 			<string>6C6BC5EB105F4CA6005CD035</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>FirstTimeWindowDisplayed</key>
@@ -660,8 +666,8 @@
 										<string>yes</string>
 										<key>sizes</key>
 										<array>
-											<string>{{0, 0}, {316, 198}}</string>
-											<string>{{316, 0}, {378, 198}}</string>
+											<string>{{0, 0}, {316, 201}}</string>
+											<string>{{316, 0}, {378, 201}}</string>
 										</array>
 									</dict>
 									<key>VerticalSplitView</key>
@@ -676,8 +682,8 @@
 										<string>yes</string>
 										<key>sizes</key>
 										<array>
-											<string>{{0, 0}, {694, 198}}</string>
-											<string>{{0, 198}, {694, 183}}</string>
+											<string>{{0, 0}, {694, 201}}</string>
+											<string>{{0, 201}, {694, 180}}</string>
 										</array>
 									</dict>
 								</dict>
@@ -710,7 +716,7 @@
 										<real>148</real>
 									</array>
 									<key>Frame</key>
-									<string>{{316, 0}, {378, 198}}</string>
+									<string>{{316, 0}, {378, 201}}</string>
 									<key>RubberWindowFrame</key>
 									<string>50 202 694 422 0 0 1680 1028 </string>
 								</dict>
@@ -738,13 +744,13 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1CD10A99069EF8BA00B06720</string>
-				<string>6C6BD170106358D3005CD035</string>
+				<string>6C58F6081064511B0043B4FC</string>
 				<string>1C162984064C10D400B95A72</string>
-				<string>6C6BD171106358D3005CD035</string>
-				<string>6C6BD172106358D3005CD035</string>
-				<string>6C6BD173106358D3005CD035</string>
-				<string>6C6BD174106358D3005CD035</string>
-				<string>6C6BD175106358D3005CD035</string>
+				<string>6C58F6091064511B0043B4FC</string>
+				<string>6C58F60A1064511B0043B4FC</string>
+				<string>6C58F60B1064511B0043B4FC</string>
+				<string>6C58F60C1064511B0043B4FC</string>
+				<string>6C58F60D1064511B0043B4FC</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>
@@ -898,7 +904,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C78EAAD065D492600B07095</string>
-				<string>6C6BD176106358D3005CD035</string>
+				<string>6C58F60E1064511B0043B4FC</string>
 				<string>1C78EAAC065D492600B07095</string>
 			</array>
 			<key>ToolbarConfiguration</key>
