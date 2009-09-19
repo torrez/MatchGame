@@ -43,7 +43,7 @@
 
 - (void)setScore:(int)score
 {
-    [self writeScore:[NSString stringWithFormat:@"TRIES %i", score]];    
+    [self writeScore:[NSString stringWithFormat:@"TURNS %i", score]];    
 }
 
 - (void)writeScore:(NSString *)scoreString

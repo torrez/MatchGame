@@ -21,7 +21,7 @@
 		};
 	};
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
-		activeBuildConfigurationName = Debug;
+		activeBuildConfigurationName = Release;
 		activeExecutable = 6C6BC5DC105F4C92005CD035 /* MatchGame */;
 		activeSDKPreference = iphonesimulator3.1;
 		activeTarget = 1D6058900D05DD3D006BFB54 /* MatchGame */;
@@ -81,6 +81,12 @@
 			6C58F6161064556A0043B4FC /* PBXTextBookmark */ = 6C58F6161064556A0043B4FC /* PBXTextBookmark */;
 			6C58F62010645F5B0043B4FC /* XCBuildMessageTextBookmark */ = 6C58F62010645F5B0043B4FC /* XCBuildMessageTextBookmark */;
 			6C58F62110645F5B0043B4FC /* PBXTextBookmark */ = 6C58F62110645F5B0043B4FC /* PBXTextBookmark */;
+			6C58F630106492BD0043B4FC /* PBXTextBookmark */ = 6C58F630106492BD0043B4FC /* PBXTextBookmark */;
+			6C58F631106492BD0043B4FC /* PBXBookmark */ = 6C58F631106492BD0043B4FC /* PBXBookmark */;
+			6C58F632106492BD0043B4FC /* PBXBookmark */ = 6C58F632106492BD0043B4FC /* PBXBookmark */;
+			6C58F633106492BD0043B4FC /* PBXBookmark */ = 6C58F633106492BD0043B4FC /* PBXBookmark */;
+			6C58F634106492BD0043B4FC /* PBXBookmark */ = 6C58F634106492BD0043B4FC /* PBXBookmark */;
+			6C58F635106492BD0043B4FC /* PBXTextBookmark */ = 6C58F635106492BD0043B4FC /* PBXTextBookmark */;
 			6C6BCC541062FAEF005CD035 = 6C6BCC541062FAEF005CD035 /* PBXTextBookmark */;
 			6C6BCC551062FAEF005CD035 = 6C6BCC551062FAEF005CD035 /* PBXTextBookmark */;
 			6C6BCC5B1062FC24005CD035 = 6C6BCC5B1062FC24005CD035 /* PBXTextBookmark */;
@@ -176,6 +182,42 @@
 		vrLen = 338;
 		vrLoc = 4390;
 	};
+	6C58F630106492BD0043B4FC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6C6BC605105F5DC0005CD035 /* GameLayerScene.h */;
+		name = "GameLayerScene.h: 23";
+		rLen = 0;
+		rLoc = 525;
+		rType = 0;
+		vrLen = 866;
+		vrLoc = 0;
+	};
+	6C58F631106492BD0043B4FC /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 6C6BC77B10605F7C005CD035 /* card-back.png */;
+	};
+	6C58F632106492BD0043B4FC /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 6C6BC77610605F7C005CD035 /* card-2.png */;
+	};
+	6C58F633106492BD0043B4FC /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 6C58F6191064571F0043B4FC /* Icon.png */;
+	};
+	6C58F634106492BD0043B4FC /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 6C58F622106460570043B4FC /* Default.png */;
+	};
+	6C58F635106492BD0043B4FC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6C6BC5FD105F5A17005CD035 /* HUDLayer.m */;
+		name = "HUDLayer.m: 46";
+		rLen = 0;
+		rLoc = 1232;
+		rType = 0;
+		vrLen = 1055;
+		vrLoc = 556;
+	};
 	6C6BC5DC105F4C92005CD035 /* MatchGame */ = {
 		isa = PBXExecutable;
 		activeArgIndices = (
@@ -231,9 +273,9 @@
 	};
 	6C6BC5FD105F5A17005CD035 /* HUDLayer.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {936, 784}}";
-			sepNavSelRange = "{608, 0}";
-			sepNavVisRange = "{131, 766}";
+			sepNavIntBoundsRect = "{{0, 0}, {936, 840}}";
+			sepNavSelRange = "{1232, 0}";
+			sepNavVisRange = "{556, 1055}";
 		};
 	};
 	6C6BC605105F5DC0005CD035 /* GameLayerScene.h */ = {
