@@ -31,6 +31,8 @@
         return kEventHandled;
     }
     
+    //The HUD layer gets first crack at touches.
+    //this simply checks if the Shuffle sprite was touched.
     if (CGRectContainsPoint(shuffle_rect, cLoc))
     {
         [game shuffleDeck];
@@ -49,7 +51,7 @@
 - (void)writeScore:(NSString *)scoreString
 {
     [self removeChild:score_label cleanup:YES];
-    score_label = [Label labelWithString:scoreString fontName:@"Helvetica" fontSize:13];
+    score_label = [Label labelWithString:scoreString fontName:@"Helvetica" fontSize:13]; //must check if Menlo is available on iPhone yet.
     CGSize size = [[Director sharedDirector] winSize];    
     score_label.position =  ccp( size.width /2 , size.height - 20 );
     

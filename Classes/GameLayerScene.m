@@ -11,6 +11,8 @@
 @synthesize first_card;
 @synthesize second_card;
 
+
+//I do the setup for the scene inside the game layer 
 +(id) scene
 {
 	Scene *scene = [Scene node];
@@ -66,14 +68,14 @@
     second_card = NULL;
     [self resetScore];
     
-    // Cleaning up cards.
+    // Cleaning up card states.
     for (int x = 0; x < DECK_SIZE; x++) {
         Card *testCard = [deck objectAtIndex:x];
         testCard.is_matched = NO;
         testCard.is_flipped = NO;
     }
     
-    // Randomizing order
+    // Randomizing order.
     for (int x = 0; x < DECK_SIZE; x++) {
         int elements = DECK_SIZE - x;
         int n = (random() % elements) + x;
@@ -95,10 +97,14 @@
         Card *card = [deck objectAtIndex:x];
         [[card getCurrentView] setPosition:offscreen];
 		[self addChild: [card getCurrentView]];
+        
+        //animation of cards is here
         [[card getCurrentView] runAction:[MoveTo actionWithDuration:.5 position:origin]];
         [[card getCurrentView] runAction:[RotateBy actionWithDuration:.5 angle:360]];
+
 		[card set_table_location:CGRectMake(origin.x - CARD_WIDTH / 2 , origin.y - CARD_HEIGHT / 2, CARD_WIDTH, CARD_HEIGHT)];
 		
+        //Changing row/column points. I could probably do this better.
         if (y==4)
 		{
             origin.y -= 100;
@@ -115,9 +121,11 @@
     return in_match;
 }
 
+
+//I'm not sure if the next two methods are the correct way to interact with a HUD layer.
 - (void) incrementScore
 {
-    score+=1;
+    score += 1;
     [hud setScore:score];
 }
 
@@ -127,12 +135,15 @@
     [hud setScore:score];
 }
 
+
 -(BOOL)ccTouchesEnded:(NSSet *)touches withEvent:(UIEvent *)event 
 {
 	UITouch *touch   = [touches anyObject];
 	CGPoint location = [touch locationInView: [touch view]];
 	CGPoint cLoc     = [[Director sharedDirector] convertCoordinate: location];
     
+    // this should be broken out into a separate function that returns the
+    // card if it was touched and "in play".
     for (int x = 0; x < DECK_SIZE; x++) 
     {
         Card *card = [deck objectAtIndex:x];
@@ -172,11 +183,14 @@
 	return kEventIgnored;
 }
 
+//find, remove the sprite, flip the state, redraw the card in the same place
 - (void)flipCard:(Card *)card
 {
     CGPoint origin = [[card getCurrentView] position];
     [self removeChild:[card getCurrentView] cleanup:YES];
+    
     [card flip];
+    
     [self addChild:[card getCurrentView]];
     [[card getCurrentView] setPosition: origin];
 }

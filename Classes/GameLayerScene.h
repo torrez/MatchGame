@@ -25,7 +25,7 @@
 @property (nonatomic, retain) Card              *second_card;
 
 
-// returns a Scene that contains the GameLayer as the only child
+// returns a Scene that contains the gamelayer and hud as children
 + (id) scene;
 - (void)initializeDeck;
 - (void)shuffleDeck;

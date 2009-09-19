@@ -14,6 +14,7 @@
 {
     if(n > 0)
     {
+        //This is important. Autoreleasing this object for return so we don't hold onto it.
         Card *new_card = [[[Card alloc] init] autorelease];
         new_card.front_sprite = [Sprite spriteWithFile:[NSString stringWithFormat:@"card-%i.png", n]];
         new_card.back_sprite  =	[Sprite spriteWithFile:@"card-back.png"];
